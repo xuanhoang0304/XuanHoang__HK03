@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Fonts -->
+        <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Css -->
+        <link rel="stylesheet" href="./assets/scss/style.css" />
+        <title>Hackathon 03</title>
+    </head>
+
+    <body>
+        <section class="product">
+            <!-- product Side bar -->
+            <div class="product__sideBar hide-mb">
+                <!-- Logo -->
+                <a href="#" class="product__sideBar-top">
+                    <figure class="product__logo-wrap">
+                        <img
+                            src="./assets/img/logo.svg"
+                            alt="logo"
+                            class="product__logo-img"
+                        />
+                    </figure>
+                    <p class="product__logoName">
+                        Besnik<span class="product__logoName--small"
+                            >Contributor</span
+                        >
+                    </p>
+                </a>
+                <ul class="product__sideBar-list">
+                    <li class="product__sideBar-item">
+                        <a href="#" class="product__sideBar-link">
+                            <figure class="product__sideBar-icon-wrap">
+                                <img
+                                    src="./assets/img/dashboard.svg"
+                                    alt="dashboard"
+                                    class="product__sideBar-icon"
+                                />
+                            </figure>
+                            <p class="product__sideBar-text">Dashboard</p>
+                        </a>
+                    </li>
+                    <li
+                        class="product__sideBar-item product__sideBar-item--active"
+                    >
+                        <a href="#" class="product__sideBar-link">
+                            <figure class="product__sideBar-icon-wrap">
+                                <img
+                                    src="./assets/img/product.svg"
+                                    alt="product"
+                                    class="product__sideBar-icon"
+                                />
+                            </figure>
+                            <p
+                                class="product__sideBar-text product__sideBar-text--active"
+                            >
+                                Product
+                            </p>
+                        </a>
+                    </li>
+                    <li class="product__sideBar-item">
+                        <a href="#" class="product__sideBar-link">
+                            <figure class="product__sideBar-icon-wrap">
+                                <img
+                                    src="./assets/img/wallet.svg"
+                                    alt="wallet"
+                                    class="product__sideBar-icon"
+                                />
+                            </figure>
+                            <p class="product__sideBar-text">Wallet</p>
+                        </a>
+                    </li>
+                    <li class="product__sideBar-item">
+                        <a href="#" class="product__sideBar-link">
+                            <figure class="product__sideBar-icon-wrap">
+                                <img
+                                    src="./assets/img/report.svg"
+                                    alt="report"
+                                    class="product__sideBar-icon"
+                                />
+                            </figure>
+                            <p class="product__sideBar-text">Report</p>
+                        </a>
+                    </li>
+                    <li class="product__sideBar-item">
+                        <a href="#" class="product__sideBar-link">
+                            <figure class="product__sideBar-icon-wrap">
+                                <img
+                                    src="./assets/img/setting.svg"
+                                    alt="setting"
+                                    class="product__sideBar-icon"
+                                />
+                            </figure>
+                            <p class="product__sideBar-text">Setting</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- product content -->
+            <div class="product__content">
+                <!-- header -->
+                <div class="product__header">
+                    <div class="container">
+                        <div class="product__header-left">
+                            <label
+                                for="product__file"
+                                class="product__file-btn hide-mb"
+                                >Upload file</label
+                            >
+                            <input type="file" id="product__file" />
+                            <button class="hide-pc show-mb">
+                                <img src="./assets/img/Menu.svg" alt="menu" />
+                            </button>
+                            <a href="#">
+                                <figure
+                                    class="product__logo-wrap hide-pc show-mb"
+                                >
+                                    <img
+                                        src="./assets/img/logo.svg"
+                                        alt="logo"
+                                        class="product__logo-img"
+                                    />
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="product__header-right">
+                            <label
+                                for="product__file"
+                                class="product__file-btn show-mb hide-pc"
+                                >Upload file</label
+                            >
+                            <button class="product__noti-wrap hide-mb">
+                                <img
+                                    src="./assets/img/notification.svg"
+                                    alt="notification"
+                                    class="product__noti-img"
+                                />
+                            </button>
+                            <figure class="product__avt-wrap">
+                                <img
+                                    src="./assets/img/avator.png"
+                                    alt="avatar"
+                                    class="product__avt-img"
+                                />
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- main -->
+                <div class="product__main">
+                    <div class="container">
+                        <div class="product__top">
+                            <h1 class="product__top-title">Create New Product</h1>
+                            <div class="product__btns">
+                                <button class="product__save">
+                                    <figure class="product__save-icon-wrap">
+                                        <img
+                                            src="./assets/img/edit.svg"
+                                            alt="edit-icon"
+                                            class="product__save-icon"
+                                        />
+                                    </figure>
+                                    <p class="product__save-txt hide-mb">Save Draft</p>
+                                </button>
+                                <button class="product__publish">
+                                    <figure class="product__publish-icon-wrap">
+                                        <img
+                                            src="./assets/img/check.svg"
+                                            alt="publish-icon"
+                                            class="product__publish-icon"
+                                        />
+                                    </figure>
+                                    <p class="product__publish-txt hide-mb">Publish</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__left">
+                                <!-- info -->
+                                <div class="product__info">
+                                    <div class="product__title">
+                                        <p class="product__list-style">1</p>
+                                        <h2 class="product__heading">
+                                            Information
+                                        </h2>
+                                    </div>
+                                    <h3 class="product__sub-title">
+                                        Tittle
+                                        <span class="product__sub-title--blue"
+                                            >*</span
+                                        >
+                                    </h3>
+                                    <input type="text" class="product__input" />
+                                    <h3 class="product__sub-title">
+                                        Description
+                                        <span class="product__sub-title--blue"
+                                            >*</span
+                                        >
+                                    </h3>
+                                    <div class="product__desc-wrap">
+                                        <ul class="product__desc-list">
+                                            <li>
+                                                <button
+                                                    class="product__desc-btn"
+                                                >
+                                                    <img
+                                                        src="./assets/img/bold.svg"
+                                                        alt="desc-icon"
+                                                        class="product__desc-icon"
+                                                    />
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    class="product__desc-btn"
+                                                >
+                                                    <img
+                                                        src="./assets/img/italic.svg"
+                                                        alt="desc-icon"
+                                                        class="product__desc-icon"
+                                                    />
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    class="product__desc-btn"
+                                                >
+                                                    <img
+                                                        src="./assets/img/underline.svg"
+                                                        alt="desc-icon"
+                                                        class="product__desc-icon"
+                                                    />
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    class="product__desc-btn"
+                                                >
+                                                    <img
+                                                        src="./assets/img/smile.svg"
+                                                        alt="desc-icon"
+                                                        class="product__desc-icon"
+                                                    />
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    class="product__desc-btn"
+                                                >
+                                                    <img
+                                                        src="./assets/img/link.svg"
+                                                        alt="desc-icon"
+                                                        class="product__desc-icon"
+                                                    />
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    class="product__desc-btn"
+                                                >
+                                                    <img
+                                                        src="./assets/img/list.svg"
+                                                        alt="desc-icon"
+                                                        class="product__desc-icon"
+                                                    />
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    class="product__desc-btn"
+                                                >
+                                                    <img
+                                                        src="./assets/img/center.svg"
+                                                        alt="desc-icon"
+                                                        class="product__desc-icon"
+                                                    />
+                                                </button>
+                                            </li>
+                                        </ul>
+                                        <textarea
+                                            class="product__desc-text"
+                                        ></textarea>
+                                    </div>
+                                    <h3 class="product__sub-title">
+                                        Card Description
+                                        <span class="product__sub-title--blue"
+                                            >*</span
+                                        >
+                                    </h3>
+                                    <textarea
+                                        class="product__card-text"
+                                        placeholder="Add description"
+                                    ></textarea>
+                                    <h3 class="product__sub-title">
+                                        Keywords
+                                        <span class="product__sub-title--blue"
+                                            >*</span
+                                        >
+                                    </h3>
+                                    <input
+                                        placeholder="Add Keyword"
+                                        type="text"
+                                        class="product__input"
+                                    />
+                                </div>
+                                <!-- images -->
+                                <div class="product__images">
+                                    <div class="product__title">
+                                        <p class="product__list-style">2</p>
+                                        <h2 class="product__heading">Images</h2>
+                                    </div>
+                                    <h3 class="product__sub-title">
+                                        Cover image
+                                        <span class="product__sub-title--blue"
+                                            >*</span
+                                        >
+                                    </h3>
+                                    <input type="file" id="cover__image" />
+                                    <div class="product__input-file">
+                                        <label
+                                            for="cover__image"
+                                            class="product__chosse-img"
+                                        >
+                                            <img
+                                                src="./assets/img/choose-img.svg"
+                                                alt="choose-img-icon"
+                                                class="product__choose-icon"
+                                            />
+                                        </label>
+                                        <p class="product__input-file-txt">
+                                            Click to drop image
+                                        </p>
+                                    </div>
+                                    <div class="product__images-bottom">
+                                        <div class="product__detail">
+                                            <h3 class="product__sub-title">
+                                                Image Details
+                                                <span
+                                                    class="product__sub-title--blue-2"
+                                                    >(must 4-6 images)</span
+                                                >
+                                            </h3>
+                                            <input
+                                                type="file"
+                                                id="cover__image2"
+                                            />
+                                            <div class="product__input-file">
+                                                <label
+                                                    for="cover__image2"
+                                                    class="product__chosse-img"
+                                                >
+                                                    <img
+                                                        src="./assets/img/choose-img.svg"
+                                                        alt="choose-img-icon"
+                                                        class="product__choose-icon"
+                                                    />
+                                                </label>
+                                                <p
+                                                    class="product__input-file-txt"
+                                                >
+                                                    Click to drop image
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="product__preview">
+                                            <h3 class="product__sub-title">
+                                                Preview Image
+                                                <span
+                                                    class="product__sub-title--blue"
+                                                    >*</span
+                                                >
+                                            </h3>
+                                            <input
+                                                type="file"
+                                                id="cover__image3"
+                                            />
+                                            <div class="product__input-file">
+                                                <label
+                                                    for="cover__image3"
+                                                    class="product__chosse-img"
+                                                >
+                                                    <img
+                                                        src="./assets/img/choose-img.svg"
+                                                        alt="choose-img-icon"
+                                                        class="product__choose-icon"
+                                                    />
+                                                </label>
+                                                <p
+                                                    class="product__input-file-txt"
+                                                >
+                                                    Click to drop image
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Main file -->
+                                <div class="product__main-file">
+                                    <div class="product__title">
+                                        <p class="product__list-style">3</p>
+                                        <h2 class="product__heading">
+                                            Main file
+                                        </h2>
+                                    </div>
+                                    <h3 class="product__sub-title">
+                                        Product file
+                                        <span class="product__sub-title--blue"
+                                            >*</span
+                                        >
+                                    </h3>
+                                    <div class="product__input-file">
+                                        <label
+                                            for="cover__image"
+                                            class="product__chosse-img"
+                                        >
+                                            <img
+                                                src="./assets/img/choose-img.svg"
+                                                alt="choose-img-icon"
+                                                class="product__choose-icon"
+                                            />
+                                        </label>
+                                        <p class="product__input-file-txt">
+                                            Click to drop image
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__right">
+                                <h3 class="product__sub-title">
+                                    Product softWare
+                                    <span class="product__sub-title--blue"
+                                        >*</span
+                                    >
+                                </h3>
+                                <div class="product__category">
+                                    <p class="product__catagory-txt">
+                                        Select Categories
+                                    </p>
+                                    <button class="product__catagory-btn">
+                                        <img
+                                            src="./assets/img/arrow.svg"
+                                            alt="product-catagory-arrow"
+                                            class="product__catagory-arrow"
+                                        />
+                                    </button>
+                                </div>
+                                <h3 class="product__sub-title">
+                                    Pricing
+                                    <span class="product__sub-title--blue"
+                                        >*</span
+                                    >
+                                </h3>
+                                <input
+                                    type="text"
+                                    class="product__input"
+                                    placeholder="$30"
+                                />
+                                <h3 class="product__sub-title">
+                                    Product Card Image
+                                    <span class="product__sub-title--blue"
+                                        >*</span
+                                    >
+                                </h3>
+                                <input type="file" id="cover__image4" />
+                                <div class="product__input-file">
+                                    <label
+                                        for="cover__image4"
+                                        class="product__chosse-img"
+                                    >
+                                        <img
+                                            src="./assets/img/choose-img.svg"
+                                            alt="choose-img-icon"
+                                            class="product__choose-icon"
+                                        />
+                                    </label>
+                                    <p class="product__input-file-txt">
+                                        Click to drop image
+                                    </p>
+                                </div>
+                                <h3 class="product__sub-title">
+                                    Add Software
+                                    <span class="product__sub-title--blue"
+                                        >*</span
+                                    >
+                                </h3>
+                                <div class="product__softWare">
+                                    <p class="product__softWare-txt">
+                                        Select software
+                                    </p>
+                                    <button class="product__softWare-btn">
+                                        <img
+                                            src="./assets/img/arrow.svg"
+                                            alt="product-catagory-arrow"
+                                            class="product__catagory-arrow"
+                                        />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- list -->
+            </div>
+        </section>
+    </body>
+</html>

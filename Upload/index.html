@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Fonts -->
+        <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Css -->
+        <link rel="stylesheet" href="./assets/scss/style.css" />
+        <title>Hackathon 03</title>
+    </head>
+    <body>
+        <section class="upload">
+            <!-- Upload Side bar -->
+            <div class="upload__sideBar hide-mb">
+                <!-- Logo -->
+                <a href="#" class="upload__sideBar-top">
+                    <figure class="upload__logo-wrap">
+                        <img
+                            src="./assets/img/logo.svg"
+                            alt="logo"
+                            class="upload__logo-img"
+                        />
+                    </figure>
+                    <p class="upload__logoName">
+                        Besnik<span class="upload__logoName--small"
+                            >Contributor</span
+                        >
+                    </p>
+                </a>
+                <ul class="upload__sideBar-list">
+                    <li class="upload__sideBar-item">
+                        <a href="#" class="upload__sideBar-link">
+                            <figure class="upload__sideBar-icon-wrap">
+                                <img
+                                    src="./assets/img/dashboard.svg"
+                                    alt="dashboard"
+                                    class="upload__sideBar-icon"
+                                />
+                            </figure>
+                            <p class="upload__sideBar-text">Dashboard</p>
+                        </a>
+                    </li>
+                    <li class="upload__sideBar-item upload__sideBar-item--active">
+                        <a href="#" class="upload__sideBar-link">
+                            <figure class="upload__sideBar-icon-wrap">
+                                <img
+                                    src="./assets/img/product.svg"
+                                    alt="product"
+                                    class="upload__sideBar-icon"
+                                />
+                            </figure>
+                            <p class="upload__sideBar-text upload__sideBar-text--active">Product</p>
+                        </a>
+                    </li>
+                    <li class="upload__sideBar-item">
+                        <a href="#" class="upload__sideBar-link">
+                            <figure class="upload__sideBar-icon-wrap">
+                                <img
+                                    src="./assets/img/wallet.svg"
+                                    alt="wallet"
+                                    class="upload__sideBar-icon"
+                                />
+                            </figure>
+                            <p class="upload__sideBar-text">Wallet</p>
+                        </a>
+                    </li>
+                    <li class="upload__sideBar-item">
+                        <a href="#" class="upload__sideBar-link">
+                            <figure class="upload__sideBar-icon-wrap">
+                                <img
+                                    src="./assets/img/report.svg"
+                                    alt="report"
+                                    class="upload__sideBar-icon"
+                                />
+                            </figure>
+                            <p class="upload__sideBar-text">Report</p>
+                        </a>
+                    </li>
+                    <li class="upload__sideBar-item">
+                        <a href="#" class="upload__sideBar-link">
+                            <figure class="upload__sideBar-icon-wrap">
+                                <img
+                                    src="./assets/img/setting.svg"
+                                    alt="setting"
+                                    class="upload__sideBar-icon"
+                                />
+                            </figure>
+                            <p class="upload__sideBar-text">Setting</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Upload content -->
+            <div class="upload__content">
+                <!-- header -->
+                <div class="upload__header">
+                    <div class="container">
+                        <div class="upload__header-left">
+                            <label
+                                for="upload__file"
+                                class="upload__file-btn hide-mb"
+                                >Upload file</label
+                            >
+                            <input
+                                type="file"
+                                id="upload__file"
+                                value="Upload file"
+                            />
+                            <button class="hide-pc show-mb">
+                                <img src="./assets/img/Menu.svg" alt="menu" />
+                            </button>
+                            <a href="#">
+                                <figure
+                                    class="upload__logo-wrap hide-pc show-mb"
+                                >
+                                    <img
+                                        src="./assets/img/logo.svg"
+                                        alt="logo"
+                                        class="upload__logo-img"
+                                    />
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="upload__header-right">
+                            <label
+                                for="upload__file"
+                                class="upload__file-btn show-mb hide-pc"
+                                >Upload file</label
+                            >
+                            <button class="upload__noti-wrap hide-mb">
+                                <img
+                                    src="./assets/img/notification.svg"
+                                    alt="notification"
+                                    class="upload__noti-img"
+                                />
+                            </button>
+                            <figure class="upload__avt-wrap">
+                                <img
+                                    src="./assets/img/avt.png"
+                                    alt="avatar"
+                                    class="upload__avt-img"
+                                />
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- main -->
+                <div class="upload__main">
+                    <div class="container">
+                        <!-- nav -->
+                        <div class="upload__nav hide-mb">
+                            <ul class="upload__list">
+                                <li class="upload__item">
+                                    <p class="upload__title">
+                                        <span class="upload__title--active"
+                                            >Upload</span
+                                        >
+                                        (35)
+                                    </p>
+                                </li>
+                                <li class="upload__item">
+                                    <p class="upload__title">
+                                        <span>Rejections</span> (18)
+                                    </p>
+                                </li>
+                                <li class="upload__item">
+                                    <p class="upload__title">
+                                        <span>Published</span> (60)
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="upload__select-custom hide-pc show-mb">
+                            <div class="upload__select-left">
+                                <li class="upload__item">
+                                    <p class="upload__title">
+                                        <span class="upload__title--active"
+                                            >Upload</span
+                                        >
+                                        (35)
+                                    </p>
+                                </li>
+                                <li class="upload__item">
+                                    <p class="upload__title">
+                                        <span>Rejections</span> (18)
+                                    </p>
+                                </li>
+                                <li class="upload__item">
+                                    <p class="upload__title">
+                                        <span>Published</span> (60)
+                                    </p>
+                                </li>
+                            </div>
+
+                            <button class="upload__select-arrow">
+                                <img
+                                    src="./assets/img/arrow.svg"
+                                    alt="arrow"
+                                    class="upload__select-arrow-img"
+                                />
+                            </button>
+                        </ul>
+                        <!-- table -->
+                        <table class="upload__table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 96px">
+                                        <input
+                                            type="checkbox"
+                                            id="upload__checkBox"
+                                        />
+                                        <label
+                                            for="upload__checkBox"
+                                            class="upload__label"
+                                        ></label>
+                                    </th>
+                                    <th style="min-width: 108px">Design</th>
+                                    <th style="min-width: 239px">Tittle</th>
+                                    <th style="min-width: 159px">Categories</th>
+                                    <th style="min-width: 124px">Type</th>
+                                    <th style="min-width: 229px">Price</th>
+                                    <th style="min-width: 47px">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- item01 -->
+                                <tr>
+                                    <td>
+                                        <input
+                                            type="checkbox"
+                                            id="upload__checkBox1"
+                                        />
+                                        <label
+                                            for="upload__checkBox1"
+                                            class="upload__label"
+                                        ></label>
+                                    </td>
+                                    <td>
+                                        <figure class="upload__table-img-wrap">
+                                            <img
+                                                src="./assets/img/hero__img01.png"
+                                                alt="table-img"
+                                                class="upload__talbe-img"
+                                            />
+                                        </figure>
+                                    </td>
+                                    <td>
+                                        <h2 class="upload__talbe-title">
+                                            Education Landing Page
+                                        </h2>
+                                    </td>
+                                    <td>Templates</td>
+                                    <td>Figma</td>
+                                    <td>$34</td>
+                                    <td>
+                                        <button class="upload__edit">
+                                            <img
+                                                src="./assets/img/edit.svg"
+                                                alt="edit-btn"
+                                                class="upload__edit-img"
+                                            />
+                                        </button>
+                                        <button class="upload__delete">
+                                            <img
+                                                src="./assets/img/delete.svg"
+                                                alt="delete-btn"
+                                                class="upload__delete-img"
+                                            />
+                                        </button>
+                                    </td>
+                                </tr>
+                                <!-- item02 -->
+                                <tr>
+                                    <td>
+                                        <input
+                                            type="checkbox"
+                                            id="upload__checkBox2"
+                                        />
+                                        <label
+                                            for="upload__checkBox2"
+                                            class="upload__label"
+                                        ></label>
+                                    </td>
+                                    <td>
+                                        <figure class="upload__table-img-wrap">
+                                            <img
+                                                src="./assets/img/hero__img02.png"
+                                                alt="table-img"
+                                                class="upload__talbe-img"
+                                            />
+                                        </figure>
+                                    </td>
+                                    <td>
+                                        <h2 class="upload__talbe-title">
+                                            Education Landing Page
+                                        </h2>
+                                    </td>
+                                    <td>Web App</td>
+                                    <td>Figma</td>
+                                    <td>$64</td>
+                                    <td>
+                                        <button class="upload__edit">
+                                            <img
+                                                src="./assets/img/edit.svg"
+                                                alt="edit-btn"
+                                                class="upload__edit-img"
+                                            />
+                                        </button>
+                                        <button class="upload__delete">
+                                            <img
+                                                src="./assets/img/delete.svg"
+                                                alt="delete-btn"
+                                                class="upload__delete-img"
+                                            />
+                                        </button>
+                                    </td>
+                                </tr>
+                                <!-- item03 -->
+                                <tr>
+                                    <td>
+                                        <input
+                                            type="checkbox"
+                                            id="upload__checkBox3"
+                                        />
+                                        <label
+                                            for="upload__checkBox3"
+                                            class="upload__label"
+                                        ></label>
+                                    </td>
+                                    <td>
+                                        <figure class="upload__table-img-wrap">
+                                            <img
+                                                src="./assets/img/hero__img03.png"
+                                                alt="table-img"
+                                                class="upload__talbe-img"
+                                            />
+                                        </figure>
+                                    </td>
+                                    <td>
+                                        <h2 class="upload__talbe-title">
+                                            NFT Dashboard Design
+                                        </h2>
+                                    </td>
+                                    <td>Dashboard</td>
+                                    <td>Figma</td>
+                                    <td>$24</td>
+                                    <td>
+                                        <button class="upload__edit">
+                                            <img
+                                                src="./assets/img/edit.svg"
+                                                alt="edit-btn"
+                                                class="upload__edit-img"
+                                            />
+                                        </button>
+                                        <button class="upload__delete">
+                                            <img
+                                                src="./assets/img/delete.svg"
+                                                alt="delete-btn"
+                                                class="upload__delete-img"
+                                            />
+                                        </button>
+                                    </td>
+                                </tr>
+                                <!-- item04 -->
+                                <tr>
+                                    <td>
+                                        <input
+                                            type="checkbox"
+                                            id="upload__checkBox4"
+                                        />
+                                        <label
+                                            for="upload__checkBox4"
+                                            class="upload__label"
+                                        ></label>
+                                    </td>
+                                    <td>
+                                        <figure class="upload__table-img-wrap">
+                                            <img
+                                                src="./assets/img/hero__img04.png"
+                                                alt="table-img"
+                                                class="upload__talbe-img"
+                                            />
+                                        </figure>
+                                    </td>
+                                    <td>
+                                        <h2 class="upload__talbe-title">
+                                            Crypto Mobile App Design
+                                        </h2>
+                                    </td>
+                                    <td>Mobile App</td>
+                                    <td>Figma</td>
+                                    <td>$54</td>
+                                    <td>
+                                        <button class="upload__edit">
+                                            <img
+                                                src="./assets/img/edit.svg"
+                                                alt="edit-btn"
+                                                class="upload__edit-img"
+                                            />
+                                        </button>
+                                        <button class="upload__delete">
+                                            <img
+                                                src="./assets/img/delete.svg"
+                                                alt="delete-btn"
+                                                class="upload__delete-img"
+                                            />
+                                        </button>
+                                    </td>
+                                </tr>
+                                <!-- item05 -->
+                                <tr>
+                                    <td>
+                                        <input
+                                            type="checkbox"
+                                            id="upload__checkBox5"
+                                        />
+                                        <label
+                                            for="upload__checkBox5"
+                                            class="upload__label"
+                                        ></label>
+                                    </td>
+                                    <td>
+                                        <figure class="upload__table-img-wrap">
+                                            <img
+                                                src="./assets/img/hero__img05.png"
+                                                alt="table-img"
+                                                class="upload__talbe-img"
+                                            />
+                                        </figure>
+                                    </td>
+                                    <td>
+                                        <h2 class="upload__talbe-title">
+                                            Medical Mobile App Design
+                                        </h2>
+                                    </td>
+                                    <td>Mobile App</td>
+                                    <td>Figma</td>
+                                    <td>$36</td>
+                                    <td>
+                                        <button class="upload__edit">
+                                            <img
+                                                src="./assets/img/edit.svg"
+                                                alt="edit-btn"
+                                                class="upload__edit-img"
+                                            />
+                                        </button>
+                                        <button class="upload__delete">
+                                            <img
+                                                src="./assets/img/delete.svg"
+                                                alt="delete-btn"
+                                                class="upload__delete-img"
+                                            />
+                                        </button>
+                                    </td>
+                                </tr>
+                                <!-- item06 -->
+                                <tr>
+                                    <td>
+                                        <input
+                                            type="checkbox"
+                                            id="upload__checkBox6"
+                                        />
+                                        <label
+                                            for="upload__checkBox6"
+                                            class="upload__label"
+                                        ></label>
+                                    </td>
+                                    <td>
+                                        <figure class="upload__table-img-wrap">
+                                            <img
+                                                src="./assets/img/hero__img06.png"
+                                                alt="table-img"
+                                                class="upload__talbe-img"
+                                            />
+                                        </figure>
+                                    </td>
+                                    <td>
+                                        <h2 class="upload__talbe-title">
+                                            Social Media App Design
+                                        </h2>
+                                    </td>
+                                    <td>Mobile App</td>
+                                    <td>Figma</td>
+                                    <td>$40</td>
+                                    <td>
+                                        <button class="upload__edit">
+                                            <img
+                                                src="./assets/img/edit.svg"
+                                                alt="edit-btn"
+                                                class="upload__edit-img"
+                                            />
+                                        </button>
+                                        <button class="upload__delete">
+                                            <img
+                                                src="./assets/img/delete.svg"
+                                                alt="delete-btn"
+                                                class="upload__delete-img"
+                                            />
+                                        </button>
+                                    </td>
+                                </tr>
+                                <!-- item07 -->
+                                <tr>
+                                    <td>
+                                        <input
+                                            type="checkbox"
+                                            id="upload__checkBox7"
+                                        />
+                                        <label
+                                            for="upload__checkBox7"
+                                            class="upload__label"
+                                        ></label>
+                                    </td>
+                                    <td>
+                                        <figure class="upload__table-img-wrap">
+                                            <img
+                                                src="./assets/img/hero__img07.png"
+                                                alt="table-img"
+                                                class="upload__talbe-img"
+                                            />
+                                        </figure>
+                                    </td>
+                                    <td>
+                                        <h2 class="upload__talbe-title">
+                                            Copywriting Ai Tools
+                                        </h2>
+                                    </td>
+                                    <td>Web App</td>
+                                    <td>Figma</td>
+                                    <td>$54</td>
+                                    <td>
+                                        <button class="upload__edit">
+                                            <img
+                                                src="./assets/img/edit.svg"
+                                                alt="edit-btn"
+                                                class="upload__edit-img"
+                                            />
+                                        </button>
+                                        <button class="upload__delete">
+                                            <img
+                                                src="./assets/img/delete.svg"
+                                                alt="delete-btn"
+                                                class="upload__delete-img"
+                                            />
+                                        </button>
+                                    </td>
+                                </tr>
+                                <!-- item08 -->
+                                <tr>
+                                    <td>
+                                        <input
+                                            type="checkbox"
+                                            id="upload__checkBox8"
+                                        />
+                                        <label
+                                            for="upload__checkBox8"
+                                            class="upload__label"
+                                        ></label>
+                                    </td>
+                                    <td>
+                                        <figure class="upload__table-img-wrap">
+                                            <img
+                                                src="./assets/img/hero__img08.png"
+                                                alt="table-img"
+                                                class="upload__talbe-img"
+                                            />
+                                        </figure>
+                                    </td>
+                                    <td>
+                                        <h2 class="upload__talbe-title">
+                                            Education Landing Page
+                                        </h2>
+                                    </td>
+                                    <td>Templates</td>
+                                    <td>Figma</td>
+                                    <td>$34</td>
+                                    <td>
+                                        <button class="upload__edit">
+                                            <img
+                                                src="./assets/img/edit.svg"
+                                                alt="edit-btn"
+                                                class="upload__edit-img"
+                                            />
+                                        </button>
+                                        <button class="upload__delete">
+                                            <img
+                                                src="./assets/img/delete.svg"
+                                                alt="delete-btn"
+                                                class="upload__delete-img"
+                                            />
+                                        </button>
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- list -->
+            </div>
+        </section>
+    </body>
+</html>

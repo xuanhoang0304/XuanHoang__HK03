@@ -1,0 +1,61 @@
+@import "./variable";
+
+@mixin image-wrap($width : 40px, $height :40px) {
+    width: $width;
+    height: $height;
+}
+@mixin txt ($pmr-font : $pmr-font,$fsize : 2rem,$fweight : 500,$line-h : 22px,$color :#fff){
+    font-size: $fsize;
+    font-weight: $fweight;
+    line-height: $line-h;
+    font-family: $pmr-font;
+    color: $color;
+}
+@mixin btn ($btn-pd-top-bot:10px,$btn-pd-left-right : 10px,$bgcl : #fff,$bd-radius : 2px){
+    padding: $btn-pd-top-bot $btn-pd-left-right;
+    background-color: $bgcl;
+    border-radius: $bd-radius;
+    cursor: pointer;
+}
+@mixin imgage($cover: true) {
+    @if $cover == true {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: inherit;
+    } @else {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: inherit;
+    }
+}
+
+@mixin flex($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin middle($flex: false) {
+    @if $flex == false {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } @else {
+        @include flex();
+    }
+}
+// Tablet
+@mixin tablet($max-tablet: 1023.98px){
+    @media screen and (max-width: $max-tablet) {
+        @content;
+    }
+}
+// Mobie
+@mixin mobie($max-mobie : 767.98px) {
+    @media screen and (max-width: $max-mobie) {
+        @content;
+    }
+}

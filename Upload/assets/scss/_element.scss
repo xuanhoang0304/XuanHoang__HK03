@@ -1,0 +1,16 @@
+@import "./variable";
+html {
+    font-size: 62.5%;
+    font-family: $pmr-font;
+    color: $pmr-text-cl;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: calc(100% - 60px);
+    margin: 0 auto;
+}
