@@ -79,18 +79,16 @@ a {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: #000;
 }
-
-.upload__sideBar {
-  background-color: inherit;
+.upload .upload__sideBar {
   padding: 30px;
   position: sticky;
-  top: -15px;
+  top: 0;
   left: 0;
+  background-color: #000;
+  height: 100vh;
 }
-
-.upload__sideBar-top {
+.upload .upload__sideBar .upload__sideBar-top {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -98,42 +96,39 @@ a {
        column-gap: 11px;
   padding-right: 31px;
 }
-
-.upload__logo-wrap {
+.upload .upload__sideBar .upload__sideBar-top .upload__logo-wrap {
   width: 40px;
   height: 40px;
 }
-
-.upload__logo-img {
+.upload .upload__sideBar .upload__sideBar-top .upload__logo-wrap .upload__logo-img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: inherit;
 }
-
-.upload__logoName {
+.upload .upload__sideBar .upload__sideBar-top .upload__logoName {
   font-size: 2rem;
   font-weight: 600;
   line-height: normal;
   font-family: "Inter", sans-serif;
   color: #fff;
 }
-
-.upload__logoName--small {
+.upload .upload__sideBar .upload__sideBar-top .upload__logoName .upload__logoName--small {
   color: #484848;
   font-size: 1.4rem;
 }
-
-.upload__sideBar-list {
+.upload .upload__sideBar .upload__sideBar-list {
   margin-top: 48px;
 }
-
-.upload__sideBar-item {
+.upload .upload__sideBar .upload__sideBar-list .upload__sideBar-item--active {
+  border-radius: 15px;
+  background: #26282e;
+}
+.upload .upload__sideBar .upload__sideBar-list .upload__sideBar-item {
   padding: 15px 0 15px 16px;
 }
-
-.upload__sideBar-link {
+.upload .upload__sideBar .upload__sideBar-list .upload__sideBar-item .upload__sideBar-link {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -141,42 +136,31 @@ a {
        column-gap: 10px;
   color: #b2b2b8;
 }
-
-.upload__sideBar-icon-wrap {
+.upload .upload__sideBar .upload__sideBar-list .upload__sideBar-item .upload__sideBar-link .upload__sideBar-icon-wrap {
   width: 24px;
   height: 24px;
 }
-
-.upload__sideBar-icon {
+.upload .upload__sideBar .upload__sideBar-list .upload__sideBar-item .upload__sideBar-link .upload__sideBar-icon-wrap .upload__sideBar-icon {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: inherit;
 }
-
-.upload__sideBar-text {
+.upload .upload__sideBar .upload__sideBar-list .upload__sideBar-item .upload__sideBar-text--active {
+  color: #fff;
+}
+.upload .upload__sideBar .upload__sideBar-list .upload__sideBar-item .upload__sideBar-text {
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 24px;
   font-family: "Satoshi", sans-serif;
   color: inherit;
 }
-
-.upload__sideBar-text--active {
-  color: #fff;
-}
-
-.upload__sideBar-item--active {
-  border-radius: 15px;
-  background: #26282e;
-}
-
-.upload__content {
+.upload .upload__content {
   width: 100%;
 }
-
-.upload__header {
+.upload .upload__content .upload__header {
   background-color: #fff;
   padding: 15px 0;
   position: sticky;
@@ -184,17 +168,15 @@ a {
   left: 0;
   z-index: 5;
 }
-
-.upload__header .container {
+.upload .upload__content .upload__header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.upload__header .container #upload__file {
+.upload .upload__content .upload__header .container #upload__file {
   display: none;
 }
-
-.upload__file-btn {
+.upload .upload__content .upload__header .upload__file-btn {
   padding: 9px 28.6px;
   background-color: #5827e4;
   border-radius: 8px;
@@ -205,70 +187,64 @@ a {
   font-family: "Satoshi", sans-serif;
   color: #fff;
 }
-
-.upload__header-right {
+.upload .upload__content .upload__header .upload__header-right {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   -moz-column-gap: 16px;
        column-gap: 16px;
 }
-
-.upload__noti-wrap {
+.upload .upload__content .upload__header .upload__header-right .upload__noti-wrap {
   width: 36px;
   height: 36px;
 }
-
-.upload__avt-wrap {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-}
-.upload__avt-wrap .upload__avt-img {
-  border-radius: inherit;
-}
-
-.upload__avt-img,
-.upload__noti-img {
+.upload .upload__content .upload__header .upload__header-right .upload__noti-wrap .upload__noti-img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: inherit;
 }
-
-.upload__main {
+.upload .upload__content .upload__header .upload__header-right .upload__avt-wrap {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+.upload .upload__content .upload__header .upload__header-right .upload__avt-wrap .upload__avt-img {
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: inherit;
+}
+.upload .upload__content .upload__main {
   padding-top: 40px;
   background-color: #f5f7fb;
 }
-
-.upload__list {
+.upload .upload__content .upload__main .upload__title--active {
+  color: #101010;
+}
+.upload .upload__content .upload__main .upload__list {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   -moz-column-gap: 91px;
        column-gap: 91px;
 }
-
-.upload__item {
+.upload .upload__content .upload__main .upload__list .upload__item {
   position: relative;
   padding-bottom: 23px;
   cursor: pointer;
 }
-
-.upload__title {
+.upload .upload__content .upload__main .upload__list .upload__item .upload__title {
   font-size: 2rem;
   font-weight: 500;
   line-height: 28px;
   font-family: "Satoshi", sans-serif;
   color: #929cad;
 }
-
-.upload__title--active {
-  color: #101010;
-}
-
-.upload__item::after {
+.upload .upload__content .upload__main .upload__list .upload__item::after {
   position: absolute;
   content: "";
   display: block;
@@ -282,59 +258,27 @@ a {
   visibility: hidden;
   transition: 0.5s linear;
 }
-
-.upload__item:hover::after {
+.upload .upload__content .upload__main .upload__list .upload__item:hover::after {
   opacity: 1;
   visibility: visible;
 }
-
-.upload__table {
+.upload .upload__content .upload__main .upload__table {
   width: 100%;
   margin-top: 39px;
   background-color: #fff;
   border-radius: 14px;
   padding: 10px;
 }
-
-[id*=upload__checkBox] {
+.upload .upload__content .upload__main .upload__table [id*=upload__checkBox] {
   display: none;
 }
-
-.upload__label {
-  display: block;
-  position: relative;
-  width: 24px;
-  height: 24px;
-  border-radius: 4px;
-  border: 1px solid #d9d9d9;
-  background: #fff;
-  transition: 0.3s linear;
-  cursor: pointer;
-}
-
-.upload__label::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 5px;
-  left: 4px;
-  border-left: 2px solid #fff;
-  border-bottom: 2px solid #fff;
-  width: 16px;
-  height: 8px;
-  z-index: 0;
-  transform: rotate(-45deg);
-}
-
-[id*=upload__checkBox]:checked + .upload__label {
+.upload .upload__content .upload__main .upload__table [id*=upload__checkBox]:checked + .upload__label {
   background-color: #5827E4;
 }
-
-thead tr {
+.upload .upload__content .upload__main .upload__table thead tr {
   background-color: #f3f5f7;
 }
-
-thead tr th {
+.upload .upload__content .upload__main .upload__table thead tr th {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 22px;
@@ -348,32 +292,26 @@ thead tr th {
   z-index: 1;
   background-color: inherit;
 }
-
-thead tr th:first-child {
+.upload .upload__content .upload__main .upload__table thead tr th:first-child {
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   padding-left: 20px;
 }
-
-thead tr th:last-child {
+.upload .upload__content .upload__main .upload__table thead tr th:last-child {
   padding: 10px 74px 10px 0;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
 }
-
-tbody tr td:first-child {
+.upload .upload__content .upload__main .upload__table tbody tr td:first-child {
   padding-left: 26px;
 }
-
-tbody tr td:nth-child(2) {
+.upload .upload__content .upload__main .upload__table tbody tr td:nth-child(2) {
   padding: 10px 12px 10px 15px;
 }
-
-tbody tr:last-child td:nth-child(2) {
-  padding: 20px 12px 10px 15px;
+.upload .upload__content .upload__main .upload__table tbody tr:last-child td:nth-child(2) {
+  padding: 10px 12px 10px 15px;
 }
-
-tbody tr td:nth-child(3) {
+.upload .upload__content .upload__main .upload__table tbody tr td:nth-child(3) {
   padding: 0 10px 0 22px;
   font-size: 1.6rem;
   font-weight: 500;
@@ -381,10 +319,9 @@ tbody tr td:nth-child(3) {
   font-family: "Satoshi", sans-serif;
   color: #555964;
 }
-
-tbody tr td:nth-child(4),
-tbody tr td:nth-child(5),
-tbody tr td:nth-child(6) {
+.upload .upload__content .upload__main .upload__table tbody tr td:nth-child(4),
+.upload .upload__content .upload__main .upload__table tbody tr td:nth-child(5),
+.upload .upload__content .upload__main .upload__table tbody tr td:nth-child(6) {
   padding: 0 10px 0 17px;
   font-size: 1.6rem;
   font-weight: 500;
@@ -392,38 +329,56 @@ tbody tr td:nth-child(6) {
   font-family: "Satoshi", sans-serif;
   color: #555964;
 }
-
-tbody tr td:last-child button:first-child {
+.upload .upload__content .upload__main .upload__table tbody tr td:last-child button:first-child {
   margin: 0 20px 0 6px;
   width: 24px;
   height: 24px;
 }
-
-tbody tr td:last-child button:last-child {
+.upload .upload__content .upload__main .upload__table tbody tr td:last-child button:last-child {
   margin: 0 23px 0 0;
   width: 24px;
   height: 24px;
 }
-
-tbody tr td:last-child img {
+.upload .upload__content .upload__main .upload__table tbody tr td:last-child img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: inherit;
 }
-
-.upload__table-img-wrap {
+.upload .upload__content .upload__main .upload__table tbody tr:first-child td:nth-child(2) {
+  padding: 0;
+}
+.upload .upload__content .upload__main .upload__table tbody .upload__label {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+.upload .upload__content .upload__main .upload__table tbody .upload__label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  width: 16px;
+  height: 8px;
+  z-index: 0;
+  transform: rotate(-45deg);
+}
+.upload .upload__content .upload__main .upload__table tbody .upload__table-img-wrap {
   width: 80px;
   height: 70px;
   border-radius: 6px;
 }
-
-tbody tr:first-child td:nth-child(2) {
-  padding: 0;
-}
-
-.upload__talbe-img {
+.upload .upload__content .upload__main .upload__table tbody .upload__table-img-wrap .upload__talbe-img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -438,27 +393,38 @@ tbody tr:first-child td:nth-child(2) {
   .show-mb {
     display: block;
   }
-  .upload__table {
-    overflow: scroll;
+  .upload .container {
+    max-width: calc(100% - 48px);
   }
-  .upload__header-right {
-    -moz-column-gap: 12px;
-         column-gap: 12px;
+  .upload .upload__content .upload__header {
+    padding: 12px 0;
   }
-  .upload__table {
-    margin-top: 24px;
-  }
-  .upload__header-left {
+  .upload .upload__content .upload__header .upload__header-left {
     display: flex;
     justify-content: unset;
     align-items: center;
     -moz-column-gap: 16px;
          column-gap: 16px;
   }
-  .upload__select-custom {
-    position: sticky;
-    top: 0;
-    left: 0;
+  .upload .upload__content .upload__header .upload__header-right {
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+  }
+  .upload .upload__content .upload__main {
+    padding: 24px 0;
+  }
+  .upload .upload__content .upload__main .container {
+    overflow: scroll;
+  }
+  .upload .upload__content .upload__main .container .upload__title {
+    font-size: 1.6rem;
+    line-height: 22px;
+    color: #929cad;
+  }
+  .upload .upload__content .upload__main .container .upload__table {
+    margin-top: 24px;
+  }
+  .upload .upload__content .upload__main .container .upload__select-custom {
     overflow: hidden;
     display: flex;
     justify-content: space-between;
@@ -467,22 +433,11 @@ tbody tr:first-child td:nth-child(2) {
     height: 38px;
     border-radius: 30px;
     background: #fff;
-  }
-  .upload__select {
-    display: none;
-  }
-  .upload__title {
-    font-size: 1.6rem;
-    line-height: 22px;
-  }
-  .upload__header {
-    padding: 12px 0;
-  }
-  thead tr th {
+    position: sticky;
     top: 0;
-    left: -10px;
+    left: 0;
   }
-  .upload__main .container {
-    overflow: auto;
+  .upload .upload__content .upload__main .container .upload__select-custom .upload__select-input {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
