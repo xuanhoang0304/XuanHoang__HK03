@@ -568,6 +568,7 @@ input, textarea {
   padding: 7px 12px;
   border-radius: 8px;
   border: 1px solid #e0e2e6;
+  margin-top: 20px;
 }
 .product__right .product__category .product__category-input,
 .product__right .product__category .product__software-input,
