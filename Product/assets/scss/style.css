@@ -561,14 +561,20 @@ input, textarea {
   color: #080D1C;
 }
 .product__right .product__category,
-.product__right .product__softWare {
-  margin-top: 20px;
+.product__right .product__software {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 7px 12px;
   border-radius: 8px;
   border: 1px solid #e0e2e6;
-  padding: 7px 12px;
+}
+.product__right .product__category .product__category-input,
+.product__right .product__category .product__software-input,
+.product__right .product__software .product__category-input,
+.product__right .product__software .product__software-input {
+  width: 100%;
+  padding-right: 10px;
 }
 .product__right .product__catagory-btn,
 .product__right .product__softWare-btn {
@@ -583,16 +589,24 @@ input, textarea {
      object-fit: cover;
   border-radius: inherit;
 }
-.product__right .product__input::-moz-placeholder {
+.product__right .product__category-input,
+.product__right .product__software-input {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 21px;
+  font-family: "Satoshi", sans-serif;
+  color: #080D1C;
+}
+.product__right .product__input::-moz-placeholder, .product__right .product__category-input::-moz-placeholder, .product__right .product__software-input::-moz-placeholder {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 21px;
   font-family: "Satoshi", sans-serif;
   color: #a1a9b4;
 }
-.product__right .product__catagory-txt,
-.product__right .product__softWare-txt,
-.product__right .product__input::placeholder {
+.product__right .product__input::placeholder,
+.product__right .product__category-input::placeholder,
+.product__right .product__software-input::placeholder {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 21px;

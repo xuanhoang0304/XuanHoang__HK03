@@ -316,13 +316,19 @@
         padding: 7px 12px;
         @include txt($pmr-font, 1.4rem, 400, 21px, $pmr-text-cl);
     }
+
     .product__category,
-    .product__softWare {
-        margin-top: 20px;
+    .product__software {
         @include flex(space-between);
+        padding: 7px 12px;
         border-radius: 8px;
         border: 1px solid #e0e2e6;
-        padding: 7px 12px;
+
+        .product__category-input,
+        .product__software-input {
+            width: 100%;
+            padding-right: 10px;
+        }
     }
     .product__catagory-btn,
     .product__softWare-btn {
@@ -332,10 +338,14 @@
             @include imgage(true);
         }
     }
+    .product__category-input,
+    .product__software-input {
+        @include txt($pmr-font, 1.4rem, 400, 21px, $pmr-text-cl);
+    }
 
-    .product__catagory-txt,
-    .product__softWare-txt,
-    .product__input::placeholder {
+    .product__input::placeholder,
+    .product__category-input::placeholder,
+    .product__software-input::placeholder {
         @include txt($pmr-font, 1.4rem, 400, 21px, #a1a9b4);
     }
 }
@@ -380,19 +390,19 @@
     .product__left {
         padding: 30px 20px;
     }
-    .product__right{
+    .product__right {
         padding: 24px 20px;
     }
     .product__desc-wrap .product__desc-list {
         column-gap: 17px;
     }
-    .product__images-bottom{
+    .product__images-bottom {
         grid-template-columns: 1fr;
         row-gap: 30px;
         margin-top: 30px;
-        .product__sub-title{
+        .product__sub-title {
             margin-top: 0;
         }
     }
-
+    
 }
