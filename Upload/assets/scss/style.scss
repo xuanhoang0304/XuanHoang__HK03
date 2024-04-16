@@ -166,7 +166,30 @@
                 [id*="upload__checkBox"]:checked + .upload__label {
                     background-color: $bgcl;
                 }
-
+                .upload__label {
+                    display: block;
+                    position: relative;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 4px;
+                    border: 1px solid #d9d9d9;
+                    background: #fff;
+                    transition: 0.3s linear;
+                    cursor: pointer;
+                }
+                .upload__label::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 5px;
+                    left: 4px;
+                    border-left: 2px solid #fff;
+                    border-bottom: 2px solid #fff;
+                    width: 16px;
+                    height: 8px;
+                    z-index: 0;
+                    transform: rotate(-45deg);
+                }
                 thead {
                     tr {
                         background-color: #f3f5f7;
@@ -241,30 +264,7 @@
                     tr:first-child td:nth-child(2) {
                         padding: 0;
                     }
-                    .upload__label {
-                        display: block;
-                        position: relative;
-                        width: 24px;
-                        height: 24px;
-                        border-radius: 4px;
-                        border: 1px solid #d9d9d9;
-                        background: #fff;
-                        transition: 0.3s linear;
-                        cursor: pointer;
-                    }
-                    .upload__label::after {
-                        content: "";
-                        display: block;
-                        position: absolute;
-                        top: 5px;
-                        left: 4px;
-                        border-left: 2px solid #fff;
-                        border-bottom: 2px solid #fff;
-                        width: 16px;
-                        height: 8px;
-                        z-index: 0;
-                        transform: rotate(-45deg);
-                    }
+
                     .upload__table-img-wrap {
                         @include image-wrap(80px, 70px);
                         border-radius: 6px;
