@@ -53,17 +53,18 @@
                         }
                     }
                 }
-                .product__sideBar-text {
-                    @include txt($pmr-font, 1.8rem, 500, 24px, inherit);
-                }
-
-                .product__sideBar-text--active {
-                    color: $white-text-cl;
-                }
             }
             .product__sideBar-item--active {
                 border-radius: 15px;
                 background: #26282e;
+                .product__sideBar-link {
+                    color: #fff;
+                }
+                .product__sideBar-icon {
+                    path {
+                        fill: #fff;
+                    }
+                }
             }
         }
     }

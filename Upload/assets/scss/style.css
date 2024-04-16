@@ -121,10 +121,6 @@ a {
 .upload .upload__sideBar .upload__sideBar-list {
   margin-top: 48px;
 }
-.upload .upload__sideBar .upload__sideBar-list .upload__sideBar-item--active {
-  border-radius: 15px;
-  background: #26282e;
-}
 .upload .upload__sideBar .upload__sideBar-list .upload__sideBar-item {
   padding: 15px 0 15px 16px;
 }
@@ -147,15 +143,15 @@ a {
      object-fit: cover;
   border-radius: inherit;
 }
-.upload .upload__sideBar .upload__sideBar-list .upload__sideBar-item .upload__sideBar-text--active {
+.upload .upload__sideBar .upload__sideBar-list .upload__sideBar-item--active {
+  border-radius: 15px;
+  background: #26282e;
+}
+.upload .upload__sideBar .upload__sideBar-list .upload__sideBar-item--active .upload__sideBar-link {
   color: #fff;
 }
-.upload .upload__sideBar .upload__sideBar-list .upload__sideBar-item .upload__sideBar-text {
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 24px;
-  font-family: "Satoshi", sans-serif;
-  color: inherit;
+.upload .upload__sideBar .upload__sideBar-list .upload__sideBar-item--active .upload__sideBar-icon path {
+  fill: #fff;
 }
 .upload .upload__content {
   width: 100%;

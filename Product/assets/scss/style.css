@@ -149,19 +149,15 @@ input, textarea {
      object-fit: cover;
   border-radius: inherit;
 }
-.product .product__sideBar .product__sideBar-list .product__sideBar-item .product__sideBar-text {
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 24px;
-  font-family: "Satoshi", sans-serif;
-  color: inherit;
-}
-.product .product__sideBar .product__sideBar-list .product__sideBar-item .product__sideBar-text--active {
-  color: #fff;
-}
 .product .product__sideBar .product__sideBar-list .product__sideBar-item--active {
   border-radius: 15px;
   background: #26282e;
+}
+.product .product__sideBar .product__sideBar-list .product__sideBar-item--active .product__sideBar-link {
+  color: #fff;
+}
+.product .product__sideBar .product__sideBar-list .product__sideBar-item--active .product__sideBar-icon path {
+  fill: #fff;
 }
 .product .product__content {
   width: 100%;
